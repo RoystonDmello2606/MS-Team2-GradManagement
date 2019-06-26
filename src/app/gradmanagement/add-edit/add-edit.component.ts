@@ -45,6 +45,7 @@ export class AddEditComponent implements OnInit {
   constructor(private gradService: GradService) { }
 
   ngOnInit() {
+    console.log('Initialise');
   }
 
   newGrad(): void {
@@ -59,7 +60,12 @@ export class AddEditComponent implements OnInit {
   }
 
   onSubmit() {
+    alert('onSubmit called');
     this.submitted = true;
     this.save();
+  }
+
+  getCurrentModel() {
+    return JSON.stringify(this.grad);
   }
 }

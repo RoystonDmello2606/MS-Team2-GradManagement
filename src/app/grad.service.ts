@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class GradService {
 
-  private baseUrl = '/api/v1/employees';
+  private baseUrl = 'http://localhost:8080/grads';
 
   constructor(private http: HttpClient) { }
 
@@ -28,7 +28,7 @@ export class GradService {
     return this.http.delete(`${this.baseUrl}/${emailId}`, { responseType: 'text' });
   }
 
-  getEmployeesList(): Observable<any> {
+  getGradsList(): Observable<any> {
     return this.http.get(`${this.baseUrl}`);
   }
 }

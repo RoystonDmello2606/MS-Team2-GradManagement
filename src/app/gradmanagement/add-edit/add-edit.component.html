@@ -37,105 +37,105 @@
         <form (ngSubmit)="onSubmit()" class="text-center" style="color: #757575;">
 
             <div class="md-form mt-3">
-                <input placeholder="Employee Code" type="text" class="form-control" id="employeeCode" required ngModel="grad.employeeCode"
+                <input placeholder="Employee Code" type="text" class="form-control" id="employeeCode"  [(ngModel)]="grad.employeeCode"
                     name="employeeCode">
             </div>
 
             <!-- Name -->
             <div class="md-form mt-3">
-                <input placeholder="Name" type="text" class="form-control" id="Name" required ngModel="grad.name"
+                <input placeholder="Name" type="text" class="form-control" id="Name"  [(ngModel)]="grad.name"
                     name="Name">
             </div>
 
             <div class="md-form mt-3">
-                <input placeholder="Email" type="text" class="form-control" id="Name" required ngModel="grad.email"
+                <input placeholder="Email" type="text" class="form-control" id="Name"  [(ngModel)]="grad.email"
                     name="email">
             </div>
             <!-- College -->
             <div class="md-form mt-3">
-                <input placeholder="College" type="text" class="form-control" id="college" required
-                    ngModel="grad.college" name="college">
+                <input placeholder="College" type="text" class="form-control" id="college" 
+                    [(ngModel)]="grad.college" name="college">
             </div>
             <!-- Location Prefernece -->
             <div class="md-form mt-3">
-                <input placeholder="Location Preference" type="text" class="form-control" id="locpreference" required
-                    ngModel="grad.location" name="locpreference">
+                <input placeholder="Location Preference" type="text" class="form-control" id="locpreference" 
+                    [(ngModel)]="grad.location" name="locpreference">
             </div>
             <!-- Date of Joining -->
             <div class="md-form mt-3">
-                <input placeholder="Date of Joining" type="date" class="form-control" id="doj" required
-                    ngModel="grad.joiningDate" name="doj">
+                <input placeholder="Date of Joining" type="date" class="form-control" id="doj" 
+                    [(ngModel)]="grad.joiningDate" name="doj">
             </div>
             <!-- Batch -->
             <div class="md-form mt-3">
-                <input placeholder="Batch" type="text" class="form-control" id="batch" required ngModel="grad.batch"
+                <input placeholder="Batch" type="text" class="form-control" id="batch"  [(ngModel)]="grad.batch"
                     name="batch">
             </div>
             <!-- Date of Joining(Reconfirmation -Y/N) -->
             <div class="md-form mt-3">
                 <input placeholder="Date of Joining(Reconfirmation-Y/N)" type="text" class="form-control" id="dojR"
-                    required ngModel="grad.dateOfJoiningReconfirmation" name="dojR">
+                     [(ngModel)]="grad.dateOfJoiningReconfirmation" name="dojR">
             </div>
 
             <div class="md-form mt-3">
-                <input placeholder="Remarks" type="text" class="form-control" id="remarks" ngModel="grad.remarks"
+                <input placeholder="Remarks" type="text" class="form-control" id="remarks" [(ngModel)]="grad.remarks"
                     name="remarks">
             </div>
 
             <!-- Course -->
             <div class="md-form mt-3">
-                <input placeholder="Course" type="text" class="form-control" id="course" required ngModel="grad.course"
+                <input placeholder="Course" type="text" class="form-control" id="course"  [(ngModel)]="grad.course"
                     name="course">
             </div>
             <!-- Branch -->
             <div class="md-form mt-3">
-                <input placeholder="Branch" type="text" class="form-control" id="branch" required ngModel="grad.branch"
+                <input placeholder="Branch" type="text" class="form-control" id="branch"  [(ngModel)]="grad.branch"
                     name="branch">
             </div>
             <!-- Current % -->
             <div class="md-form mt-3">
-                <input placeholder="Current %" type="number" class="form-control" id="currentPercent" required
-                    ngModel="grad.cgpa" name="currentPercent">
+                <input placeholder="Current %" type="number" class="form-control" id="currentPercent" 
+                    [(ngModel)]="grad.cgpa" name="currentPercent">
             </div>
             <!-- Personal Contact Number -->
             <div class="md-form mt-3">
                 <input placeholder="Personal Contact Number" type="number" class="form-control" id="personContact"
-                    required ngModel="grad.personalNumber" name="personContact">
+                     [(ngModel)]="grad.personalNumber" name="personContact">
             </div>
             <!-- Email Id -->
             <div class="md-form mt-3">
-                <input placeholder="Email" type="email" class="form-control" id="email" required ngModel="grad.personalEmail"
+                <input placeholder="Email" type="email" class="form-control" id="email"  [(ngModel)]="grad.personalEmail"
                     name="email">
             </div>
             <!-- Date of Birth -->
             <div class="md-form mt-3">
-                <input placeholder="Date of Birth" type="date" class="form-control" id="dob" required ngModel="grad.dob"
+                <input placeholder="Date of Birth" type="date" class="form-control" id="dob"  [(ngModel)]="grad.dob"
                     name="dob">
             </div>
             <!-- Native Place  -->
             <div class="md-form mt-3">
-                <input placeholder="Native Place" type="text" class="form-control" id="nativepPlace" required
-                    ngModel="grad.nativepPlace" name="nativepPlace">
+                <input placeholder="Native Place" type="text" class="form-control" id="nativepPlace" 
+                    [(ngModel)]="grad.nativepPlace" name="nativepPlace">
             </div>
 
             <!-- Current Place  -->
             <div class="md-form mt-3">
-                <input placeholder="Current Place" type="text" class="form-control" id="currentPlace" required
-                    ngModel="grad.currentPlace" name="currentPlace">
+                <input placeholder="Current Place" type="text" class="form-control" id="currentPlace" 
+                    [(ngModel)]="grad.currentPlace" name="currentPlace">
             </div>
             <!-- Parent's Contact Number -->
             <div class="md-form mt-3">
                 <input placeholder="Parent's Contact Number" type="number" class="form-control" id="parentContact"
-                    required ngModel="grad.parentContact" name="parentContact">
+                     [(ngModel)]="grad.parentContact" name="parentContact">
             </div>
             <!-- Parent's Postal Address -->
             <div class="md-form mt-3">
                 <input placeholder="Parent's Postal Address" type="text" class="form-control" id="postalAddress"
-                    required ngModel="grad.parentAddress" name="postalAddress">
+                     [(ngModel)]="grad.parentAddress" name="postalAddress">
             </div>
 
             <div class="md-form mt-3">
-                <input placeholder="CV Link" type="text" class="form-control" id="cvLink" required ngModel="grad.cvLink"
+                <input placeholder="CV Link" type="text" class="form-control" id="cvLink"  [(ngModel)]="grad.cvLink"
                     name="cvLink">
             </div>
 
@@ -144,3 +144,5 @@
         <div [hidden]="!submitted">
                 <h4>You submitted successfully!</h4>
             </div>
+
+            <pre>{{ getCurrentModel() }}</pre>
